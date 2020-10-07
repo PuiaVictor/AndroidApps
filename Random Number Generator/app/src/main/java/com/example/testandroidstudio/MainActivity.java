@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         generateButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                int rand = new Random().nextInt(seekBar.getProgress());
+                int rand = new Random().nextInt(seekBar.getProgress()) + 1;
                 resultTextView.setText(String.valueOf(rand));
             }
         });
